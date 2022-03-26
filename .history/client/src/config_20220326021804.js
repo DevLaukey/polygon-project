@@ -1,6 +1,6 @@
 export const CONTACT_ADDRESS = "0x4c371D2626ab14f99e9591747568c9277ceb86Ba";
 
-export const CONTACT_ABI =[
+export const CONTACT_ABI = [
     {
       "inputs": [],
       "payable": false,

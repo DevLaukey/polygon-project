@@ -13,6 +13,8 @@ function App() {
       const web3 = new Web3(Web3.givenProvider || "http://localhost:7545");
       const accounts = await web3.eth.requestAccounts();
       setAccount(accounts[0]);
+console.log(accounts);
+
       // Instantiate smart contract using ABI and address.
       const contactList = new web3.eth.Contract(CONTACT_ABI, CONTACT_ADDRESS);
       // set contact list to state variable.
@@ -23,8 +25,6 @@ function App() {
       for (var i = 1; i <= counter; i++) {
         // call the contacts method to get that particular contact from smart contract
         const contact = await contactList.methods.contacts(i).call();
-
-
         // add recently fetched contact to state variable.
         setContacts((contacts) => [...contacts, contact]);
       }

@@ -1,4 +1,4 @@
-export const CONTACT_ADDRESS = "0x4c371D2626ab14f99e9591747568c9277ceb86Ba";
+export const CONTACT_ADDRESS = "0x8B53e982d44cdb66b048F79ff40fe32111738806";
 
 export const CONTACT_ABI =[
     {

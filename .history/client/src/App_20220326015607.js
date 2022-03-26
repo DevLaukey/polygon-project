@@ -23,8 +23,6 @@ function App() {
       for (var i = 1; i <= counter; i++) {
         // call the contacts method to get that particular contact from smart contract
         const contact = await contactList.methods.contacts(i).call();
-
-
         // add recently fetched contact to state variable.
         setContacts((contacts) => [...contacts, contact]);
       }
@@ -32,6 +30,7 @@ function App() {
 
     load();
   }, []);
+console.log(contacts)
   return (
     <div>
       Your account is: {account}
